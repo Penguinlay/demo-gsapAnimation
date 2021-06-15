@@ -6,27 +6,13 @@ const playAudio = () => {
     return tl;
 };
 
-const animatePerson1 = () => {
-    const tl = gsap.timeline();
-    tl.fromTo("#person-1", { x: -viewportHeight(25) }, { duration: 3, ease: "circ.out", x: viewportHeight(100) });
-    return tl;
-};
-
-const animatePerson2 = () => {
-    const tl = gsap.timeline();
-    tl.fromTo("#person-2", { x: -viewportHeight(25) }, { duration: 3, ease: "circ.out", x: viewportHeight(100) });
-    return tl;
-};
-
-const animatePerson3 = () => {
-    const tl = gsap.timeline();
-    tl.fromTo("#person-3", { x: -viewportHeight(25) }, { duration: 3, ease: "circ.out", x: viewportHeight(100) });
-    return tl;
-};
-
 const animatePeople = () => {
+    const parentWidth = document.getElementById("app").clientWidth;
     const tl = gsap.timeline();
-    tl.add(animatePerson1()).add(animatePerson2(), "-=2.5").add(animatePerson3(), "-=2.5");
+    console.log(parentWidth);
+    tl.fromTo("#person-1", { x: 0 }, { duration: 3, ease: "circ.out", x: parentWidth + viewportHeight(150), y: viewportHeight(2.5) });
+    tl.fromTo("#person-2", { x: 0 }, { duration: 3, ease: "circ.out", x: parentWidth + viewportHeight(150), y: -viewportHeight(2.5) }, 0.5);
+    tl.fromTo("#person-3", { x: 0 }, { duration: 3, ease: "circ.out", x: parentWidth + viewportHeight(150), y: viewportHeight(2.5) }, 0.9);
     return tl;
 };
 

@@ -19,6 +19,7 @@ html {
 html,
 body {
     height: 100%;
+    overflow: hidden;
     width: 100%;
 }
 
@@ -37,11 +38,11 @@ body {
 #person-1,
 #person-2,
 #person-3 {
-    height: 50vh;
-    left: -25vh;
+    left: -50vh;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
+    width: 50vh;
 }
 
 #top-block,
