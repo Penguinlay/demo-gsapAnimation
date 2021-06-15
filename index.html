@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./style.css" />
+        <meta charset="UTF-8" />
+        <meta content="initial-scale=1.0,width=device-width" name="viewport" />
+        <title>Web Animation Demo</title>
+    </head>
+    <body>
+        <noscript>
+            <strong>I am sorry but the site does not work properly without JavaScript enabled. Please enable it to continue.</strong>
+        </noscript>
+        <div id="app">
+            <img id="person-1" alt="Running Person 1" src="./assets/person-2.svg" />
+            <img id="person-2" alt="Walking Person 2" src="./assets/person-1.svg" />
+            <img id="person-3" alt="Running Person 3" src="./assets/person-2.svg" />
+            <div id="top-block"></div>
+            <div id="text">
+                <p id="text-line-1">HI</p>
+                <p id="text-line-2">I'M</p>
+                <p id="text-line-3">COACH</p>
+                <p id="text-line-4">CHELSEA</p>
+            </div>
+            <div id="bottom-block"></div>
+            <input id="play-icon" aria-label="Play Button" type="image" src="./assets/playIcon.png" />
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>

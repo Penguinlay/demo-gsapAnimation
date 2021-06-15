@@ -1,0 +1,73 @@
+* {
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    font-family: "Exo", sans-serif;
+    font-size: 7vh;
+    font-weight: 200;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+html {
+    background-color: black;
+    color: black;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#app {
+    align-content: stretch;
+    align-items: stretch;
+    background-color: rgb(254, 67, 58);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    margin: auto;
+    width: 40vh;
+}
+
+#person-1,
+#person-2,
+#person-3 {
+    height: 50vh;
+    left: -25vh;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#top-block,
+#bottom-block {
+    background-color: white;
+    height: 0vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#text {
+    align-content: normal;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    opacity: 0;
+    width: 100%;
+}
+
+#play-icon {
+    height: 5vh;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
